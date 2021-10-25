@@ -1,0 +1,103 @@
+.main-slider{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.main-slider_wrapper{
+  width: 100%;
+  border-radius: 4px;
+}
+.main-slider_wrapper .main-slider_item{
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  min-height: 337px;
+}
+.main-slider_wrapper .main-slider_item .main-slider_content-header{
+  font-size: 30px;
+  font-weight: 700;
+  color:#FFFFFF;
+}
+.main-slider_wrapper .main-slider_item .main-slider_content-txt{
+  display: block; 
+  margin-top: 12px;
+  max-width: 436px;
+  font-size: 18px;
+  font-weight: 400;
+  color:#FFFFFF;
+}
+.main-slider_wrapper .main-slider_item input[type='button']{
+  text-align: center;
+  margin-top: 24px;
+  padding: 15px 34px;
+  width: 199px;
+  height: 46px;
+  cursor: pointer;
+  border-radius: 2px; 
+  background: #FFFFFF;
+}
+.main-slider .main-slider_switches {
+  position: absolute;
+  display: flex;
+  right: 49px;
+  bottom: 39px;
+}
+.main-slider .main-slider_switches .main-slider_switches-item{
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.main-slider .main-slider_switches .main-slider_switches-item.active, 
+.main-slider .main-slider_switches .main-slider_switches-item:hover{
+  background: #ffffff;
+}
+.main-slider_slick-dots{
+  position: absolute;
+  bottom: 39px;
+  right: 49px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.main-slider_slick-dots li{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.main-slider_slick-dots li button{
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.main-slider_slick-dots button::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  margin-right: 8px;
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.main-slider_slick-dots li.slick-active button:before {
+  background: #ffffff;
+}

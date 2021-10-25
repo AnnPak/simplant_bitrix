@@ -2,7 +2,7 @@
     <div class="main-slider_wrapper">
       <div  class="main-slider_item" 
             data-target="1" 
-            style="background-image: linear-gradient(0deg, rgba(16, 44, 81, 0.83), rgba(16, 44, 81, 0.83)), url('<?=SITE_TEMPLATE_PATH?>images/image_27.png');">
+            style="background-image: linear-gradient(0deg, rgba(16, 44, 81, 0.83), rgba(16, 44, 81, 0.83)), url('/images/image_27.png');">
         <h1 class="main-slider_content-header">ChronOS Strip</h1>
 
         <span class="main-slider_content-txt">
@@ -14,7 +14,7 @@
       </div>
       <div  class="main-slider_item" 
             data-target="2" 
-            style="background-image: linear-gradient(0deg, rgba(16, 44, 81, 0.83), rgba(16, 44, 81, 0.83)), url('<?=SITE_TEMPLATE_PATH?>images/image_27.png');">
+            style="background-image: linear-gradient(0deg, rgba(16, 44, 81, 0.83), rgba(16, 44, 81, 0.83)), url('/images/image_27.png');">
         <h1 class="main-slider_content-header">ChronOS Strip2</h1>
 
         <span class="main-slider_content-txt">
@@ -26,3 +26,5 @@
       </div>
     </div>
   </section>
+
+  

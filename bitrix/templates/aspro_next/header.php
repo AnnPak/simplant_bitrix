@@ -9,7 +9,7 @@ $bIncludedModule = (\Bitrix\Main\Loader::includeModule("aspro.next"));?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=LANGUAGE_ID?>" lang="<?=LANGUAGE_ID?>" <?=($htmlClass ? 'class="'.$htmlClass.'"' : '')?>>
 <head>
-	<title><?$APPLICATION->ShowTitle()?></title>
+	<!-- <title><?$APPLICATION->ShowTitle()?></title> -->
 	<?$APPLICATION->ShowMeta("viewport");?>
 	<?$APPLICATION->ShowMeta("HandheldFriendly");?>
 	<?$APPLICATION->ShowMeta("apple-mobile-web-app-capable", "yes");?>
@@ -19,6 +19,9 @@ $bIncludedModule = (\Bitrix\Main\Loader::includeModule("aspro.next"));?>
 	<?$APPLICATION->AddHeadString('<script>BX.message('.CUtil::PhpToJSObject( $MESS, false ).')</script>', true);?>
 	<?if($bIncludedModule)
 		CNext::Start(SITE_ID);?>
+		
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
 </head>
 <?$bIndexBot = CNext::checkIndexBot(); // is indexed yandex/google bot?>
 <body class="site_<?=SITE_ID?> <?=($bIncludedModule ? "fill_bg_".strtolower(CNext::GetFrontParametrValue("SHOW_BG_BLOCK")) : "");?> <?=($bIndexBot ? "wbot" : "");?>" id="main">

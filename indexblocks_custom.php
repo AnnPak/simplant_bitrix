@@ -2,7 +2,12 @@
 <?global $isShowSale, $isShowCatalogSections, $isShowCatalogElements, $isShowMiddleAdvBottomBanner, $isShowBlog, $isShowReviews;?>
 <div class="grey_block">
 	<div class="maxwidth-theme">
-	
+		<?$APPLICATION->IncludeComponent(
+			"mt.site:main.slider", 
+			".default", 
+			array(),
+			false
+		);?>
 		<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
 			array(
 				"COMPONENT_TEMPLATE" => ".default",
