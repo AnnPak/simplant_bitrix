@@ -1,0 +1,17 @@
+.top_slider_wrapp .flexslider .banner_title span{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 30px;
+  color: #ffff;
+}
+.wrap_text .banner_text{
+  max-width: 436px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.flexslider .flex-control-nav{
+  top: -56px;
+  right: -45%;
+}
