@@ -16,5 +16,11 @@
 			false
 		);?>
 	</div>
-	<hr>
+
+	<?$APPLICATION->IncludeComponent(
+			"mt.site:main.benefits", 
+			".default", 
+			array(),
+			false
+		);?>
 </div>
