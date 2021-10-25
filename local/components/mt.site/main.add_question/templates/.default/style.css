@@ -1,65 +1,39 @@
-.block-benefits{
-  width: 100%;
-  padding: 50px 15px;
+.add-question_wrapper{
   margin: 0 auto;
-  margin-top: 71px;
-  background: url(/images/benefits_bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.block-benefits_wrapper{
+  max-width: 1290px;
+  min-height: 163px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.block-benefits_content{
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.add-question_container-item{
+  display: flex;
+  margin-top: 44px;
 }
-
-.block-benefits_content h3{
+.add-question_container-item img{
+  margin-right: 50px;
+  max-width: 59px;
+  transform: translateY(-17%);
+}
+.add-question_container-item .add-question_text h3{
   margin: 0;
   font-weight: 600;
   font-size: 28px;
-  line-height: 27px;
+  line-height: 37px;
+}
+.add-question_container-item .add-question_text span{
+  font-size: 28px;
+  line-height: 37px;
+}
+.add-question_wrapper .add-question_btn{
+  width: 234px;
+  height: 46px;
+  margin-top: 44px;
+  padding: 15px 64px;
+  transform: translateY(39%);
+  border-radius: 2px;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  background: #122C50;
   color: #FFFFFF;
-}
-.block-benefits_content .block-benefits_item{
-  display: flex;
-  margin-top: 53px;
-  min-width: 393px;
-}
-.block-benefits_item .block-benefits_item-circle{
-  margin-right: 22px;
-  width: 69px;
-  height: 69px;
-  border-radius: 50%;
-  border: 12px solid #fff;
-  background: #fff;
-}
-.block-benefits_item .block-benefit_txt-block{
-  min-width: 326px;
-  padding-right: 20px;
-}
-.block-benefit_txt-block .block-benefit_txt-head{
-  display: block;
-  font-weight: 600;
-  font-size: 18px;
-  color: #FFFFFF;
-}
-.block-benefit_txt-block  .block-benefit_txt{
-  display: block;
-  max-width: 306px;
-  margin-top: 16px;
-  font-size: 17px;
-  line-height: 24px;
-  color: #FFFFFF;
-}
-@media (min-width: 1200px){
-  .block-benefits_content{
-    max-width: 1300px;
-  }
 }
