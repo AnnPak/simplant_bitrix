@@ -8,6 +8,7 @@
   border-radius: 4px;
 }
 .main-slider_wrapper .main-slider_item{
+  padding: 68px 0 68px 63px;
   background-repeat:no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -29,11 +30,14 @@
 .main-slider_wrapper .main-slider_item input[type='button']{
   text-align: center;
   margin-top: 24px;
-  padding: 15px 34px;
   width: 199px;
   height: 46px;
   cursor: pointer;
   border-radius: 2px; 
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  color: #122C50;
   background: #FFFFFF;
 }
 .main-slider .main-slider_switches {
