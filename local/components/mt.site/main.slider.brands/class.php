@@ -10,7 +10,7 @@ use \Bitrix\Main\Data\Cache;
 use Bitrix\Sale;
 use Bitrix\Main\Engine\Contract\Controllerable;
 
-class mtsite_main_slider extends CBitrixComponent{
+class mtsite_main_slider_brands extends CBitrixComponent{
   public function executeComponent(){
     
     $this->getSlides();
@@ -26,18 +26,14 @@ class mtsite_main_slider extends CBitrixComponent{
     $arSelect = array(
       "ID",
       "NAME",
-      "PREVIEW_PICTURE",
-      "PREVIEW_TEXT",
-      "DETAIL_TEXT",
-      "PROPERTY_SLIDER_LNK"
+      "DETAIL_PICTURE",
     );
   
     $res = CIBlockElement::GetList(array(), $arFilter, false, false, $arSelect);
 
     while($ob = $res->GetNextElement()){
       $arFields = $ob->GetFields();
-      $arFields["PREVIEW_PICTURE"] = CFile::GetPath($arFields["PREVIEW_PICTURE"]);
-
+      $arFields["DETAIL_PICTURE"] = CFile::GetPath($arFields["DETAIL_PICTURE"]);
       $this->arResult["ITEM"][$arFields["ID"]]  = $arFields;
     }
   }
