@@ -1,67 +1,60 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Главная",
-		"/",
-		Array(),
-		Array("ONLY_MOBILE"=>"Y"),
-		""
+		"Главная", 
+		"/", 
+		Array(), 
+		Array("ONLY_MOBILE"=>"Y"), 
+		"" 
 	),
 	Array(
-		"Каталог",
-		"/catalog/",
-		Array(),
-		Array("NOT_VISIBLE"=>"Y", "CLASS"=>"catalog wide_menu"),
-		""
+		"Каталог", 
+		"/catalog/", 
+		Array(), 
+		Array("NOT_VISIBLE"=>"Y", "CLASS"=>"catalog wide_menu"), 
+		"" 
 	),
 	Array(
-		"Акции",
-		"/sale/",
-		Array(),
-		Array(),
-		""
+		"О компании", 
+		"/company/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		"Услуги",
-		"/services/",
-		Array(),
-		Array(),
-		""
+		"Акции и спец. предложения", 
+		"/sale/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		"Как купить",
-		"/help/",
-		Array(),
-		Array(),
-		""
+		"Сервис", 
+		"/services/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		"Производители",
-		"/info/brands/",
-		Array(),
-		Array(),
-		""
+		"Как купить", 
+		"/help/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		"Магазины",
-		"/contacts/stores/",
-		Array(),
-		Array(),
-		""
+		"Пациентам и специалистам", 
+		"/info/brands/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
-		"О компании",
-		"/company/",
-		Array(),
-		Array(),
-		""
-	),
-	Array(
-		"Контакты",
-		"/contacts/",
-		Array(),
-		Array(),
-		""
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
 	)
 );
 ?>

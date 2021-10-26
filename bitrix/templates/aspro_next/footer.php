@@ -73,6 +73,6 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6994288091713368"
      crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+<?$APPLICATION->AddHeadScript("/local/assets/js/slick.js" );?> 
 
 </html>

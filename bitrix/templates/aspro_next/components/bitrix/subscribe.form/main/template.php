@@ -17,7 +17,7 @@
 			<?endforeach;?>
 			<div class="email_wrap">
 				<input type="email" title="<?=GetMessage("subscr_form_email_title")?>" class="email_input" name="sf_EMAIL" maxlength="100" required size="20" value="<?=$arResult["EMAIL"]?>" placeholder="<?=GetMessage("subscr_form_email_title")?>" />
-				<input type="submit" name="OK" class="btn btn-default send_btn" value="<?=($arResult["EMAIL"] ? GetMessage("subscr_form_button_change") : GetMessage("subscr_form_button"));?>" />
+				<input type="submit" name="OK" class="btn btn-default send_btn footer_input" value="<?=($arResult["EMAIL"] ? GetMessage("subscr_form_button_change") : GetMessage("subscr_form_button"));?>" />
 			</div>
 		</form>
 	</div>

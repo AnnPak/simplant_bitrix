@@ -15,36 +15,36 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Новости", 
+		"Акции и спец.предложения", 
+		"/sale/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка и оплата", 
+		"/help/delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сервис", 
+		"/services/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Пациентам и специалистам", 
 		"/company/news/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Сотрудники", 
-		"/company/staff/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Вакансии", 
-		"/company/vacancy/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Магазины", 
-		"/contacts/stores/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Политика", 
-		"/include/licenses_detail.php", 
+		"Контакты", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 
