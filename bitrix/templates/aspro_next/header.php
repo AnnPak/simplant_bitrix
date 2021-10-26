@@ -17,6 +17,9 @@ $bIncludedModule = (\Bitrix\Main\Loader::includeModule("aspro.next"));?>
 	<?$APPLICATION->ShowMeta("SKYPE_TOOLBAR");?>
 	<?$APPLICATION->ShowHead();?>
 	<?$APPLICATION->AddHeadString('<script>BX.message('.CUtil::PhpToJSObject( $MESS, false ).')</script>', true);?>
+	<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/local/assets/css/slick.css", true);?>
+	<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/local/assets/css/slick-theme.css", true);?>
+	
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
 	<?if($bIncludedModule)

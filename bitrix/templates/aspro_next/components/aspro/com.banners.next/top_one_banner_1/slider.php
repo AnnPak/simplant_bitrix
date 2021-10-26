@@ -134,6 +134,11 @@
 											<?if($arItem["PREVIEW_TEXT"]):?>
 												<div class="banner_text"><?=$arItem["PREVIEW_TEXT"];?></div>
 											<?endif;?>
+											<?if($arItem["PROPERTIES"]["URL_STRING"]["VALUE"]):?>
+												<form action="<?=$arItem["PROPERTIES"]["URL_STRING"]["VALUE"]?>" method="post">
+													<input type="submit" class="slider-btn" name="slider-link_<?=$arItem["ID"]?>" value="Узнать подробнее" />
+												</form>
+											<?endif;?>
 											<?if($bShowButton1 || $bShowButton2 || ($bShowVideo && !$bVideoAutoStart)):?>
 												<div class="banner_buttons">
 													<?if($bShowVideo && !$bVideoAutoStart && !$bShowButton1 && !$bShowButton2):?>

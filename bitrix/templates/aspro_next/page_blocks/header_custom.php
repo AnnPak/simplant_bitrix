@@ -2,10 +2,8 @@
 <?
 global $arTheme, $arRegion;
 $arRegions = CNextRegionality::getRegions();
-if($arRegion)
-	$bPhone = ($arRegion['PHONES'] ? true : false);
-else
-	$bPhone = ((int)$arTheme['HEADER_PHONES'] ? true : false);
+
+	// $bPhone = ((int)$arTheme['HEADER_PHONES'] ? true : false);
 $logoClass = ($arTheme['COLORED_LOGO']['VALUE'] !== 'Y' ? '' : ' colored');
 ?>
 <div class="top-block top-block-v1">
@@ -31,16 +29,17 @@ $logoClass = ($arTheme['COLORED_LOGO']['VALUE'] !== 'Y' ? '' : ' colored');
 				<?else:?>
 					<div class="top-block-item col-md-4">
 						<div class="phone-block">
-							<?if($bPhone):?>
-								<div class="inline-block">
-									<?CNext::ShowHeaderPhones();?>
-								</div>
-							<?endif?>
-							<?if($arTheme['SHOW_CALLBACK']['VALUE'] == 'Y'):?>
-								<div class="inline-block">
-									<span class="callback-block animate-load twosmallfont colored" data-event="jqm" data-param-form_id="CALLBACK" data-name="callback"><?=GetMessage("CALLBACK")?></span>
-								</div>
-							<?endif;?>
+							<?	$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
+										array(
+											"COMPONENT_TEMPLATE" => ".default",
+											"PATH" => SITE_DIR."include/top_page/phone.php",
+											"AREA_FILE_SUFFIX" => "",
+											"AREA_FILE_RECURSIVE" => "Y",
+											"EDIT_TEMPLATE" => "include_area.php"
+										),
+										false
+									);?>
+						
 						</div>
 					</div>
 				<?endif;?>
@@ -61,7 +60,15 @@ $logoClass = ($arTheme['COLORED_LOGO']['VALUE'] !== 'Y' ? '' : ' colored');
 				<div class="top-block-item pull-right show-fixed top-ctrl">
 					<div class="personal_wrap">
 						<div class="personal top login twosmallfont">
-							<?=CNext::ShowCabinetLink(true, true);?>
+						<div class="dropdown">
+							
+							<button class="btn btn-secondary dropdown-toggle btn-change-lang" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								RU
+							</button>
+							<div class="dropdown-menu change-lang" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">ENG</a>
+							</div>
+						</div>
 						</div>
 					</div>
 				</div>
