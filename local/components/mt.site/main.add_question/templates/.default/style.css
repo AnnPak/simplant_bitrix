@@ -1,5 +1,6 @@
 .add-question_wrapper{
   margin: 0 auto;
+  padding: 0 29px;
   max-width: 1290px;
   min-height: 163px;
   display: flex;
@@ -8,6 +9,9 @@
 .add-question_container-item{
   display: flex;
   margin-top: 44px;
+}
+.add-question_container-item .add-question_text{
+  margin-right: 24px;
 }
 .add-question_container-item img{
   margin-right: 50px;
@@ -36,4 +40,45 @@
   text-align: center;
   background: #122C50;
   color: #FFFFFF;
+}
+@media (max-width:1200px){
+  .add-question_wrapper{
+    padding: 0 63px;
+  }
+  .add-question_container-item img{
+    max-width: 47px;
+  }
+  .add-question_container-item .add-question_text h3{
+    font-size: 26px;
+  }
+  .add-question_container-item .add-question_text span{
+    font-size: 24px;
+  }
+}
+@media (max-width:740px){
+  .add-question_wrapper .add-question_container-item{
+    flex-direction: column;
+  }
+  .add-question_container-item .add-question_text h3{
+    font-size: 24px;
+  }
+  .add-question_container-item .add-question_text span{
+    font-size: 22px;
+  }
+  .add-question_wrapper .add-question_btn{
+    margin-top: 10%;
+    padding: 15px 40px;
+  }
+
+}
+@media (max-width: 600px){
+  .add-question_wrapper .add-question_btn{
+    padding: 15px 37px;
+  }
+  .add-question_container-item .add-question_text h3{
+    font-size: 20px;
+  }
+  .add-question_container-item .add-question_text span{
+    font-size: 18px;
+  }
 }

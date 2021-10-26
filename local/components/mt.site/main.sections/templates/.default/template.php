@@ -1,6 +1,6 @@
 <section class="catalog-card">
     <div class="catalog-card_item">
-      <span class="catalog-card_item-head">Комлпексное оснащениеклиник</span>
+      <span class="catalog-card_item-head">Компексное оснащениеклиник</span>
 
       <img src="images/image_5.jpg" alt="">
 

@@ -6,7 +6,7 @@
       <div class="block-benefits_wrapper">
         <div class="block-benefits_item">
           <div class="block-benefits_item-circle">
-            <img src="images/benefits_1.jpg">
+            <img src="images/benefits_1.jpg" alt="benefits_img">
           </div>
           <div class="block-benefit_txt-block">
             <span class="block-benefit_txt-head">30 тысяч товаров в ассортименте</span>
@@ -17,7 +17,7 @@
   
         <div class="block-benefits_item">
           <div class="block-benefits_item-circle">
-            <img src="images/benefits_2.jpg">
+            <img src="images/benefits_2.jpg" alt="benefits_img">
           </div>
           <div class="block-benefit_txt-block">
             <span class="block-benefit_txt-head">Удобная и быстрая доставка</span>
@@ -28,7 +28,7 @@
   
         <div class="block-benefits_item">
           <div class="block-benefits_item-circle">
-            <img src="images/benefits_3.jpg">
+            <img src="images/benefits_3.jpg" alt="benefits_img">
           </div>
           <div class="block-benefit_txt-block">
             <span class="block-benefit_txt-head">Консультация специалиста</span>
@@ -38,7 +38,7 @@
   
         <div class="block-benefits_item">
           <div class="block-benefits_item-circle">
-            <img src="images/benefits_4.jpg">
+            <img src="images/benefits_4.jpg" alt="benefits_img">
           </div>
           <div class="block-benefit_txt-block">
             <span class="block-benefit_txt-head">Правильное хранение</span>
@@ -49,7 +49,7 @@
   
         <div class="block-benefits_item">
           <div class="block-benefits_item-circle">
-            <img src="images/benefits_5.jpg">
+            <img src="images/benefits_5.jpg" alt="benefits_img">
           </div>
           <div class="block-benefit_txt-block">
             <span class="block-benefit_txt-head">Авторизованный сервисный центр </span>
@@ -59,7 +59,7 @@
   
         <div class="block-benefits_item">
           <div class="block-benefits_item-circle">
-            <img src="images/benefits_6.jpg">
+            <img src="images/benefits_6.jpg" alt="benefits_img">
           </div>
           <div class="block-benefit_txt-block">
             <span class="block-benefit_txt-head">Апробация оборудования</span>

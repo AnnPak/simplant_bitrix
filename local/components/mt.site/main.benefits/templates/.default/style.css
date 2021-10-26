@@ -30,7 +30,7 @@
 .block-benefits_content .block-benefits_item{
   display: flex;
   margin-top: 53px;
-  min-width: 393px;
+  max-width: 420px;
 }
 .block-benefits_item .block-benefits_item-circle{
   margin-right: 22px;
@@ -42,24 +42,43 @@
 }
 .block-benefits_item .block-benefit_txt-block{
   min-width: 326px;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 .block-benefit_txt-block .block-benefit_txt-head{
   display: block;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 17px;
   color: #FFFFFF;
 }
 .block-benefit_txt-block  .block-benefit_txt{
   display: block;
   max-width: 306px;
   margin-top: 16px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
 }
 @media (min-width: 1200px){
   .block-benefits_content{
     max-width: 1300px;
+  }
+}
+@media (max-width: 1320px){
+  .block-benefits_wrapper{
+    margin: 0 auto;
+  }
+}
+@media (max-width: 950px){
+  .block-benefit_txt-block .block-benefit_txt-head{
+    font-size: 16px;
+  }
+  .block-benefit_txt-block .block-benefit_txt{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px){
+  .block-benefits_content{
+    padding-left: 53px;
   }
 }

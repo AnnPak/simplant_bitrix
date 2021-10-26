@@ -16,6 +16,7 @@
   border: 1px solid #E3E3E3;
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 .catalog-card .catalog-card_item:nth-child(3n){
   margin-right: 0;
