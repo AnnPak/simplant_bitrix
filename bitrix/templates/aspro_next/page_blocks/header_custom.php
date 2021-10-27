@@ -29,16 +29,19 @@ $logoClass = ($arTheme['COLORED_LOGO']['VALUE'] !== 'Y' ? '' : ' colored');
 				<?else:?>
 					<div class="top-block-item col-md-4">
 						<div class="phone-block">
-							<?	$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-										array(
-											"COMPONENT_TEMPLATE" => ".default",
-											"PATH" => SITE_DIR."include/top_page/phone.php",
-											"AREA_FILE_SUFFIX" => "",
-											"AREA_FILE_RECURSIVE" => "Y",
-											"EDIT_TEMPLATE" => "include_area.php"
-										),
-										false
-									);?>
+							<?	$APPLICATION->IncludeComponent(
+									"bitrix:main.include", 
+									".default", 
+									array(
+										"COMPONENT_TEMPLATE" => ".default",
+										"PATH" => SITE_DIR."include/top_page/phone.php",
+										"AREA_FILE_SUFFIX" => "",
+										"AREA_FILE_RECURSIVE" => "Y",
+										"EDIT_TEMPLATE" => "include_area.php",
+										"AREA_FILE_SHOW" => "file"
+									),
+									false
+								);?>
 						
 						</div>
 					</div>
