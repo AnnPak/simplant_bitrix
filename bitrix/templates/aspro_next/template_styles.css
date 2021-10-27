@@ -7557,3 +7557,122 @@ table.contacts-stores tr.item td:last-of-type{width:30%;}
 .EXTENDED .ratings .item-rating.large.filled {background-position:-373px -46px;}
 .EXTENDED.blog-info__rating--top-info {vertical-align:middle;display:inline-block;}
 .EXTENDED.blog-info__rating--top-info .item-rating {vertical-align:middle;}
+
+/* include area company_inf.php */
+
+.company-inf_section{
+	display: flex;
+	flex-direction: column;
+}
+.company-inf_section img{
+	max-width: 197px;
+}
+.company-inf_section .company-inf_name{
+	margin-top: 23px;
+	max-width: 188px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+}
+.company-inf_section .company-inf_agreement{
+	margin-top: 23px;
+	max-width: 153px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+}
+.company-inf_section .company-inf_agreement a{
+	text-decoration: underline;
+	color: #c2c2c3;
+}
+/*include area index_inc.php  */
+
+.phone-area{
+	display:flex
+}
+.phone-area img{
+	width: 9px;
+	height: 12px;
+	transform: translateY(3px);
+	margin-right: 13px;
+}
+.phone-area a{
+	display: block;
+	margin-right: 19px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 18px;
+	color: #222222;
+}
+.phone-area .request_call{
+	display: block;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	color: #122C50;
+}
+
+/* top one big slider */
+.top_big_one_banner .top_slider_wrapp .flexslider .flex-direction-nav{
+	display: none;
+}
+.contacts-footer{
+	margin-bottom: 10px;
+	display: flex;
+}
+.contacts-footer a{
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	color: #3D3D3D;
+}
+.contacts-footer img{
+	min-width: 15px;
+	max-height: 100%;
+	margin-right: 10px;
+	transform: translateY(-1px);
+}
+.contacts-footer span{
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	color: #3D3D3D;
+}
+.contacts-footer .contacts-footer_img-block{
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+}
+
+/*change color on footer input-btn*/
+.btn.btn-default.send_btn.footer_input{
+	background-color: #122C50;
+}
+
+.btn-change-lang{
+	display: flex;
+	margin-top: 12px;
+	padding: 2px;
+	border: none;
+	text-align: center;
+	font-size: 15px;
+	line-height: 18px;
+	color: #222222;
+	background: #fff;
+}
+.btn-change-lang::after{
+	content: "";
+	background: url(/images/arrow-bottom.png) center no-repeat;
+	width: 8px;
+	height: 8px;
+	display: block;
+	margin: 3px 9px;
+	margin-left: 9px;
+}
+.dropdown-menu.change-lang{
+	min-width: 45px;
+	padding: 5px 5px;
+	left: -2px;
+}

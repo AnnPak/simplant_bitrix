@@ -17,8 +17,12 @@ $bIncludedModule = (\Bitrix\Main\Loader::includeModule("aspro.next"));?>
 	<?$APPLICATION->ShowMeta("SKYPE_TOOLBAR");?>
 	<?$APPLICATION->ShowHead();?>
 	<?$APPLICATION->AddHeadString('<script>BX.message('.CUtil::PhpToJSObject( $MESS, false ).')</script>', true);?>
+	<?$APPLICATION->SetAdditionalCSS("/local/assets/css/slick.css", true);?>
+	<?$APPLICATION->SetAdditionalCSS("/local/assets/css/slick-theme.css", true);?>
+	
 	<?if($bIncludedModule)
 		CNext::Start(SITE_ID);?>
+	
 </head>
 <?$bIndexBot = CNext::checkIndexBot(); // is indexed yandex/google bot?>
 <body class="site_<?=SITE_ID?> <?=($bIncludedModule ? "fill_bg_".strtolower(CNext::GetFrontParametrValue("SHOW_BG_BLOCK")) : "");?> <?=($bIndexBot ? "wbot" : "");?>" id="main">

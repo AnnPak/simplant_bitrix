@@ -70,4 +70,9 @@
 		<?CNext::setFooterTitle();
 		CNext::showFooterBasket();?>
 	</body>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6994288091713368"
+     crossorigin="anonymous"></script>
+
+<?$APPLICATION->AddHeadScript("/local/assets/js/slick.js" );?> 
+
 </html>

@@ -1,0 +1,38 @@
+.top_slider_wrapp .flexslider .banner_title span{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 30px;
+  color: #ffff;
+}
+.top_slider_wrapp .flexslider .banner_title span a{
+  color: #ffff;
+}
+.wrap_text .banner_text{
+  max-width: 436px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.flexslider .flex-control-nav{
+  top: -56px;
+  right: -45%;
+}
+.slider-btn{
+  text-align: center;
+  margin-top: 24px;
+  margin-left: 90px;
+  width: 199px;
+  height: 46px;
+  cursor: pointer;
+  border-radius: 2px; 
+  background: #FFFFFF;
+}
+
+@media (max-width: 767px){
+  .slider-btn{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+}

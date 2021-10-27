@@ -1,0 +1,38 @@
+.arrow-next {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  right: -2%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-top: 2px solid #122C50;
+  border-right: 2px solid #122C50;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.arrow-prev {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: -2%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-top: 2px solid #122C50;
+  border-right: 2px solid #122C50;
+  transform: rotate(-135deg);
+  cursor: pointer;
+}
+.client-block_slider-wrap{
+  margin: 45px 0 70px 0;
+  padding: 0 16px;
+}
+.client-block_slider{
+  width: 100%;
+  height: 60px;
+  margin-bottom: 40px;
+}
+.client-block_slider img{
+  max-width: 180px;
+}
