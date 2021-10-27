@@ -1,27 +1,31 @@
 <?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();?>
 <div class="subscribe_wrap">
-	<?$APPLICATION->IncludeComponent("bitrix:subscribe.form", "main", array(
-	"AJAX_MODE" => "N",
-		"SHOW_HIDDEN" => "N",
-		"ALLOW_ANONYMOUS" => "Y",
-		"SHOW_AUTH_LINKS" => "N",
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "3600000",
-		"CACHE_NOTES" => "",
-		"SET_TITLE" => "N",
+	 <?$APPLICATION->IncludeComponent(
+	"bitrix:subscribe.form",
+	"main",
+	Array(
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"LK" => "Y",
+		"ALLOW_ANONYMOUS" => "Y",
+		"CACHE_NOTES" => "",
+		"CACHE_TIME" => "3600000",
+		"CACHE_TYPE" => "A",
 		"COMPONENT_TEMPLATE" => "main",
-		"USE_PERSONALIZATION" => "Y",
+		"LK" => "Y",
 		"PAGE" => SITE_DIR."personal/subscribe/",
-		"URL_SUBSCRIBE" => SITE_DIR."personal/subscribe/"
+		"SET_TITLE" => "N",
+		"SHOW_AUTH_LINKS" => "N",
+		"SHOW_HIDDEN" => "N",
+		"URL_SUBSCRIBE" => SITE_DIR."personal/subscribe/",
+		"USE_PERSONALIZATION" => "Y"
 	),
-	false,
-	array(
-	"ACTIVE_COMPONENT" => "N"
-	)
+false,
+Array(
+	'ACTIVE_COMPONENT' => 'Y'
+)
 );?>
 </div>
+<br>

@@ -1,11 +1,8 @@
 <?
-if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-
-IncludeTemplateLangFile(__FILE__);
-
-$arTemplate = Array(
-	"NAME"=>GetMessage("TEMPLATE_NAME"), 
-	"DESCRIPTION"=> GetMessage("TEMPLATE_DESCRIPTION")
+$arTemplate = array (
+  'NAME' => 'Аспро: Next - интернет-магазин',
+  'DESCRIPTION' => 'Цветовые параметры и расположение блоков в шаблоне настраиваются в параметрах модуля Аспро: Next.',
+  'SORT' => '',
+  'TYPE' => '',
 );
-
 ?>
