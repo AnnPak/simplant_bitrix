@@ -68,17 +68,19 @@
 				<div class="col-md-4">
 					<div class="row">
 						<div class="col-md-12 col-sm-6">
-							<?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-								array(
-									"COMPONENT_TEMPLATE" => ".default",
-									"PATH" => SITE_DIR."include/left_block/comp_subscribe.php",
-									"AREA_FILE_SHOW" => "file",
-									"AREA_FILE_SUFFIX" => "",
-									"AREA_FILE_RECURSIVE" => "Y",
-									"EDIT_TEMPLATE" => "standard.php"
-								),
-								false
-							);?>
+							<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include", 
+	".default", 
+	array(
+		"COMPONENT_TEMPLATE" => ".default",
+		"PATH" => SITE_DIR."include/comp_subscribe.php",
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "",
+		"AREA_FILE_RECURSIVE" => "Y",
+		"EDIT_TEMPLATE" => "standard.php"
+	),
+	false
+);?>
 							<div class="social-block rounded_block">
 								<?$APPLICATION->IncludeComponent(
 									"aspro:social.info.next",

@@ -28,7 +28,12 @@
   border-radius: 2px; 
   background: #FFFFFF;
 }
-
+.slider-btn:hover{
+  font-weight: 600;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  background:transparent;
+}
 @media (max-width: 767px){
   .slider-btn{
     margin-left: 40px;

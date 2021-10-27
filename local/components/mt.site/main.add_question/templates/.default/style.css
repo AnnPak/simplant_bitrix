@@ -41,6 +41,12 @@
   background: #122C50;
   color: #FFFFFF;
 }
+.add-question_wrapper .add-question_btn:hover{
+  background: transparent;
+  font-weight: 600;
+  border-color: #122C50;
+  color: #122C50;
+}
 @media (max-width:1200px){
   .add-question_wrapper{
     padding: 0 63px;

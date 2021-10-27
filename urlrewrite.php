@@ -72,20 +72,20 @@ $arUrlRewrite=array (
     'PATH' => '/company/news/index.php',
     'SORT' => 100,
   ),
-  19 => 
-  array (
-    'CONDITION' => '#^/instruments/#',
-    'RULE' => 'ls=254',
-    'ID' => '',
-    'PATH' => '/catalog/index.php',
-    'SORT' => 100,
-  ),
   13 => 
   array (
     'CONDITION' => '#^/info/brands/#',
     'RULE' => '',
     'ID' => 'bitrix:news',
     'PATH' => '/info/brands/index.php',
+    'SORT' => 100,
+  ),
+  19 => 
+  array (
+    'CONDITION' => '#^/instruments/#',
+    'RULE' => 'ls=254',
+    'ID' => '',
+    'PATH' => '/catalog/index.php',
     'SORT' => 100,
   ),
   14 => 

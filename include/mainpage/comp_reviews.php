@@ -3,11 +3,12 @@
 <?if($isShowReviews):?>
 	<?$APPLICATION->IncludeComponent(
 			"bitrix:news.list", 
-			"front_reviews", 
+			"front-reviews-1", 
 			array(
 				"IBLOCK_TYPE" => "aspro_next_content",
 				"IBLOCK_ID" => "26",
 				"NEWS_COUNT" => "15",
+				"INCLUDE_FILE" => "Y",
 				"SORT_BY1" => "SORT",
 				"SORT_ORDER1" => "ASC",
 				"SORT_BY2" => "ID",
@@ -21,7 +22,7 @@
 				),
 				"PROPERTY_CODE" => array(
 					// 0 => "POST",
-					1 => "RATING",
+					// 1 => "RATING",
 				),
 				"CHECK_DATES" => "Y",
 				"DETAIL_URL" => "",
@@ -33,7 +34,7 @@
 				"CACHE_TIME" => "36000000",
 				"CACHE_FILTER" => "Y",
 				"CACHE_GROUPS" => "N",
-				"PREVIEW_TRUNCATE_LEN" => "250",
+				"PREVIEW_TRUNCATE_LEN" => "500",
 				"ACTIVE_DATE_FORMAT" => "d F Y",
 				"SET_TITLE" => "N",
 				"SHOW_DETAIL_LINK" => "N",
@@ -63,7 +64,7 @@
 				"SET_LAST_MODIFIED" => "N",
 				"INCLUDE_SUBSECTIONS" => "Y",
 				"STRICT_SECTION_CHECK" => "N",
-				"TITLE_BLOCK" => "О нас пишут",
+				"TITLE_BLOCK" => "Отзывы",
 				"TITLE_BLOCK_ALL" => "Все отзывы",
 				"SHOW_ADD_REVIEW" => "Y",
 				"TITLE_ADD_REVIEW" => "Оставить отзыв",
